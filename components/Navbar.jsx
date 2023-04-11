@@ -1,3 +1,8 @@
+const Navbar = () => {
+  return <div>Navbar Section</div>
+}
+
+export default Navbar
 /*
 import Link from 'next/link'
 import React from 'react'
