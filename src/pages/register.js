@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react'
 import { useAuthContext } from '../../ctx/authContext'
 
@@ -27,3 +28,4 @@ const Register = () => {
 }
 
 export default Register
+*/

@@ -1,3 +1,4 @@
+/*
 import axios from "axios";
 import { useRouter } from "next/router";
 import { createContext, useContext, useEffect, useState } from "react";
@@ -61,3 +62,4 @@ export const AuthProvider = ({ children }) => {
 export function useAuthContext() {
     return useContext(authContext)
 }
+*/

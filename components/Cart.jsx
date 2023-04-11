@@ -1,3 +1,4 @@
+/*
 import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
 import Image from 'next/image'
@@ -60,3 +61,4 @@ const Cart = () => {
 }
 
 export default Cart
+*/

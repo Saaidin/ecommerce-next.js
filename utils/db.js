@@ -1,3 +1,4 @@
+/*
 import mongoose from 'mongoose';
 
 const connection = {};
@@ -36,3 +37,4 @@ const convertDocToObj = (doc) => {
 
 const db = { connect, disconnect, convertDocToObj };
 export default db;
+*/

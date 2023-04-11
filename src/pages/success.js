@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 
 const Success = () => {
@@ -7,3 +8,4 @@ const Success = () => {
 }
 
 export default Success
+*/

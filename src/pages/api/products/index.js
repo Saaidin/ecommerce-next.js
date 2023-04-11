@@ -1,3 +1,4 @@
+/*
 import Product from "../../../../models/Product";
 import db from "../../../../utils/db";
 
@@ -24,3 +25,4 @@ export default async function handler(req, res) {
         }
     }
 }
+*/

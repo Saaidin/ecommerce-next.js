@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import Image from 'next/image'
 import woman_img from '../public/assets/womanimg.jpg'
@@ -19,3 +20,4 @@ const Hero = () => {
 }
 
 export default Hero
+*/
