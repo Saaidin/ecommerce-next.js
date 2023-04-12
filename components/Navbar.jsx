@@ -48,7 +48,9 @@ const Navbar = () => {
             <span className="absolute -top-3 -right-4 px-2 rounded-full bg-white text-[#222]">
               {cartItems?.length}
             </span>
-            <div>{isCartOpen && <Cart />}</div>
+            <div className="absolute top-4 -right-16 z-10">
+              {isCartOpen && <Cart />}
+            </div>
           </div>
           <span>{user?.username}</span>
         </div>
