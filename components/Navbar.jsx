@@ -1,7 +1,13 @@
 import Link from "next/link"
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai"
+import { useAuthContext } from "../ctx/authContext"
+import { useCartContext } from "../ctx/cartContext"
+import Cart from "./Cart"
 
 const Navbar = () => {
+  const { isCartOpen, toggleCart, cartItems } = useCartContext()
+  const { user } = useAuthContext()
+
   return (
     <div className="bg-orange-500 text-[#efefef] h-[60px] w-full py-2 px-6 flex justify-center">
       <div className="h-full w-10/12 my-auto flex justify-between items-center">
@@ -38,11 +44,13 @@ const Navbar = () => {
             <AiOutlineSearch color="black" />
           </div>
           <div className="relative">
-            <AiOutlineShoppingCart size={25} />
+            <AiOutlineShoppingCart size={25} onClick={toggleCart} />
             <span className="absolute -top-3 -right-4 px-2 rounded-full bg-white text-[#222]">
-              0
+              {cartItems?.length}
             </span>
+            <div>{isCartOpen && <Cart />}</div>
           </div>
+          <span>{user?.username}</span>
         </div>
       </div>
     </div>
