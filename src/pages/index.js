@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Inter } from "next/font/google"
 import Hero from "../../components/Hero"
 import Categories from "../../components/Categories"
+import FeaturedProducts from "../../components/FeaturedProducts"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -17,6 +18,7 @@ export default function Home() {
       <>
         <Hero />
         <Categories />
+        <FeaturedProducts />
         {/* <FeaturedProducts products={featuredProducts} /> */}
       </>
     </>

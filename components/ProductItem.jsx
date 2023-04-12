@@ -1,3 +1,8 @@
+const ProductItem = () => {
+  return <div>Enter</div>
+}
+
+export default ProductItem
 /*
 import Image from 'next/image'
 import Link from 'next/link'
