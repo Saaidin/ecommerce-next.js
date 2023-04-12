@@ -5,7 +5,7 @@ const data = {
       desc: "lorem ipsum lorem ippppppppppppsum",
       category: "headphones",
       price: 123,
-      image: "/public/images/headphones.jpg",
+      image: "/images/headphones.jpg",
       featured: true,
     },
     {
@@ -13,7 +13,7 @@ const data = {
       desc: "lorem ipsum lorem ippppppppppppsum",
       category: "sunglasses",
       price: 453,
-      image: "/public/images/womanimg.jpg",
+      image: "/images/womanimg.jpg",
       featured: true,
     },
     {
@@ -21,7 +21,7 @@ const data = {
       desc: "lorem ipsum lorem ippppppppppppsum",
       category: "hat",
       price: 748,
-      image: "/public/images/mancap.jpg",
+      image: "/images/mancap.jpg",
       featured: true,
     },
   ],

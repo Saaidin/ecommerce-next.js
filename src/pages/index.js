@@ -3,10 +3,11 @@ import { Inter } from "next/font/google"
 import Hero from "../../components/Hero"
 import Categories from "../../components/Categories"
 import FeaturedProducts from "../../components/FeaturedProducts"
+import axios from "axios"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export default function Home() {
+export default function Home({ featuredProducts }) {
   return (
     <>
       <Head>
@@ -18,11 +19,23 @@ export default function Home() {
       <>
         <Hero />
         <Categories />
-        <FeaturedProducts />
-        {/* <FeaturedProducts products={featuredProducts} /> */}
+        <FeaturedProducts products={featuredProducts} />
       </>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const { data } = await axios.get(
+    // `https://ecommerce-next-js-xz5u.vercel.app//api/products`
+    `${process.env.NEXT_PUBLIC_APP_URL}/api/products`
+  )
+
+  return {
+    props: {
+      featuredProducts: data,
+    },
+  }
 }
 
 /*
