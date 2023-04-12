@@ -27,7 +27,6 @@ export default function Home({ featuredProducts }) {
 
 export async function getServerSideProps() {
   const { data } = await axios.get(
-    // `https://ecommerce-next-js-xz5u.vercel.app//api/products`
     `${process.env.NEXT_PUBLIC_APP_URL}/api/products`
   )
 

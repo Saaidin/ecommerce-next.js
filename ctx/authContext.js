@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
     e.preventDefault()
     try {
       const { data } = await axios.post(
-        "https://ecommerce-next-js-xz5u.vercel.app//api/auth/register",
+        `${process.env.NEXT_PUBLIC_APP_URL}/api/auth/register`,
         userData
       )
       setUser(data.others)
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
     e.preventDefault()
     try {
       const { data } = await axios.post(
-        "https://ecommerce-next-js-xz5u.vercel.app/api/auth/login",
+        `${process.env.NEXT_PUBLIC_APP_URL}/api/auth/login`,
         userData
       )
       console.log(data, "LOGIN")
